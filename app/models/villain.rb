@@ -1,0 +1,2 @@
+class Villain < Character
+end

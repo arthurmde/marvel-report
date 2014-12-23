@@ -1,0 +1,9 @@
+<h1><%= @characters.count %></h1>
+
+<% @characters.each do |c| %>
+  <div><%= image_tag "#{c.thumbnail}.jpg" %></div>
+  <div>
+  	<%= link_to c.name, character_path(c.character_id) %>
+  	<%= c.character_id %>
+  </div>
+<% end %>

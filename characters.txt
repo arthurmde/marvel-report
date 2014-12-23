@@ -1,0 +1,318 @@
+1009398
+Leader
+1009404
+Lizard
+1010363
+Logan
+1009407
+Loki
+1009215
+Luke Cage
+1010726
+M.O.D.O.K.
+1010796
+Madame Web (Julia Carpenter)
+1009413
+Madrox
+1011328
+Maestro
+1009417
+Magneto
+1009421
+Mandarin
+1011335
+Maria Hill
+1009708
+Mary Jane Watson
+1009440
+Mephisto
+1010681
+Mercury
+1011019
+Molecule Man
+1009452
+Moon Knight
+1009454
+Morbius
+1009459
+Mr. Fantastic
+1009464
+Mysterio
+1009465
+Mystique
+1009466
+Namor
+1010365
+Nebula
+1009471
+Nick Fury
+1009472
+Nightcrawler
+1010063
+Norrin Radd
+1009477
+Nova
+1009480
+Odin
+1009482
+Omega Red
+1009483
+Onslaught
+1009491
+Peter Parker
+1009504
+Professor X
+1009505
+Proteus
+1010865
+Puff Adder
+1009515
+Punisher
+1009524
+Quicksilver
+1011360
+Red Hulk
+1009535
+Red Skull
+1009537
+Rhino
+1010744
+Rocket Raccoon
+1009664
+Thor
+1009624
+Tony Stark
+1017100
+A-Bomb (HAS)
+1009146
+Abomination (Emil Blonsky)
+1009148
+Absorbing Man
+1010354
+Adam Warlock
+1009497
+Alexander Pierce
+1009152
+Ancient One
+1011396
+Angel (Thomas Halloway)
+1010802
+Ant-Man (Eric O'Grady)
+1010801
+Ant-Man (Scott Lang)
+1009156
+Apocalypse
+1010773
+Arachne
+1010784
+Ares
+1009740
+Arnim Zola
+1009169
+Baron Strucker
+1009170
+Baron Zemo (Heinrich Zemo)
+1010906
+Baron Zemo (Helmut Zemo)
+1009172
+Batroc the Leaper
+1009175
+Beast
+1009180
+Beta-Ray Bill
+1009182
+Bishop
+1009183
+Black Bird
+1009184
+Black Bolt
+1009185
+Black Cat
+1009187
+Black Panther
+1009189
+Black Widow
+1009190
+Blackheart
+1009191
+Blade
+1009195
+Blastaar
+1010830
+Blazing Skull
+1009199
+Blob
+1009167
+Bruce Banner
+1009211
+Bucky
+1009212
+Bullseye
+1009214
+Cable
+1009220
+Captain America
+1010338
+Captain Marvel (Carol Danvers)
+1009224
+Captain Marvel (Mar-Vell)
+1011027
+Captain Universe
+1009733
+Charles Xavier
+1009241
+Cloak
+1009243
+Colossus
+1009252
+Crossbones
+1009257
+Cyclops
+1010776
+Danny Rand
+1009262
+Daredevil
+1009265
+Dark Phoenix
+1009268
+Deadpool
+1009269
+Death
+1010890
+Deathlok
+1009281
+Doctor Doom
+1009276
+Doctor Octopus
+1009282
+Doctor Strange
+1010677
+Dracula
+1010735
+Drax
+1009287
+Electro
+1009288
+Elektra
+1009310
+Emma Frost
+1009297
+Falcon
+1009312
+Galactus
+1009313
+Gambit
+1010763
+Gamora
+1010925
+Ghost Rider (Daniel Ketch)
+1009320
+Giant Man
+1009321
+Gladiator (Kallark)
+1014985
+Green Goblin (Barry Norman Osborn)
+1010928
+Green Goblin (Harry Osborn)
+1010743
+Groot
+1009619
+Gwen Stacy
+1011490
+Hank Pym
+1009338
+Hawkeye
+1009343
+Hercules
+1010930
+Hobgoblin (Jason Macendale)
+1010373
+Howard The Duck
+1009351
+Hulk
+1009356
+Human Torch
+1009362
+Iceman
+1009366
+Invisible Woman
+1010888
+Iron Fist (Orson Randall)
+1009368
+Iron Man
+1009371
+Iron Monger
+1009487
+Iron Patriot
+1009372
+J. Jonah Jameson
+1009496
+Jean Grey
+1009382
+Juggernaut
+1009384
+Kang
+1009389
+Kingpin
+1010842
+King Cobra
+1011147
+Korath
+1011080
+Korg
+1011312
+Korvac
+1009391
+Kraven the Hunter
+1009546
+Rogue
+1010344
+Ronan
+1009551
+Russian
+1009554
+Sabretooth
+1009558
+Sandman
+1009562
+Scarlet Witch
+1009570
+Sentinel
+1009574
+Shadowcat
+1009592
+Silver Surfer
+1011223
+Skaar
+1009610
+Spider-Man
+1010733
+Star-Lord (Peter Quill)
+1010326
+Steve Rogers
+1009629
+Storm
+1009644
+T'Challa
+1009648
+Taskmaster
+1009651
+Terrax
+1009652
+Thanos
+1009662
+Thing
+1009685
+Ultron
+1009663
+Venom (Flash Thompson)
+1010788
+Venom (Mac Gargan)
+1009697
+Vision
+1009711
+Whiplash (Mark Scarlotti)
+1010740
+Winter Soldier
+1009718
+Wolverine

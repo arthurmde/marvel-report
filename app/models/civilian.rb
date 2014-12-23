@@ -1,0 +1,2 @@
+class Civilian < Character
+end
