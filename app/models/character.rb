@@ -1,5 +1,5 @@
 class Character < ActiveRecord::Base
-  attr_accessible :character_id, :name, :thumbnail, :description, :events_uri
+  attr_accessible :character_id, :name, :thumbnail, :description, :events_uri, :detail_url, :wiki_url, :comiclink_url
 
   validates :character_id, presence: true, uniqueness: true
 

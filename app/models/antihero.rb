@@ -4,5 +4,5 @@
 # deemed "heroic," but will do so with methods, manners, or intentions that
 # may not be heroic.
 
-class Antihero < Hero
+class Antihero < Character
 end

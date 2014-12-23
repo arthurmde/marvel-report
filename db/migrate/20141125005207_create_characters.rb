@@ -5,6 +5,9 @@ class CreateCharacters < ActiveRecord::Migration
       t.string :name
       t.string :thumbnail
       t.string :events_uri
+      t.string :detail_url
+      t.string :wiki_url
+      t.string :comiclink_url
       t.integer :character_id
       t.text :description
     end
