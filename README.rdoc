@@ -6,7 +6,11 @@ Marvel Report project aims provide a funny way to navigate and know about the Ma
 
 This project is an evolution of an algorithms' discipline work in a Software Engineering course about Graphs, initially developed in C ++ by Arthur Del Esposte and Alexandre Barbosa.
 
+Marvel Report uses the Marvel API (http://developer.marvel.com/) to access information about Marvel's vast library of comics.
+
 === Development
+
+The first thing you need is register in Marvel Developer web site in order to get your individual Public and Private Key (https://developer.marvel.com/documentation/authorization). You must use these keys in config/environments/development.rb file. If you don't, you won't be able to access the Marvel API and populate your database.
 
 * System dependencies (Ubuntu 14.04 package names)
 
@@ -55,7 +59,8 @@ If you are going to send us any patch, make sure to use the follow programming g
 
 === License
 
-Please see the LICENSE file
+Please see the LICENSE file.
+Also, see the Marvel API terms of use: http://developer.marvel.com/terms
 
 === Authors
 
