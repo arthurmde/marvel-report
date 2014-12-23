@@ -1,0 +1,66 @@
+== README - Marvel Report
+
+Marvel Report is a project based in Marvel's comic books and characters.
+
+Marvel Report project aims provide a funny way to navigate and know about the Marvel World, get complete information about your favorite characters, see the relation between villains, know what are the villains who most stand in the way of a hero, and enjoy enthusiastic and developers who wish to contribute to the project.
+
+This project is an evolution of an algorithms' discipline work in a Software Engineering course about Graphs, initially developed in C ++ by Arthur Del Esposte and Alexandre Barbosa.
+
+=== Development
+
+* System dependencies (Ubuntu 14.04 package names)
+
+  * curl
+
+  * postgresql-server-dev-9.3
+
+* Ruby version
+
+  2.1.3
+
+  You can easily install it through the Ruby Version Manager - RVM. Instructions on how to do it can be found at http://rvm.io
+
+ * Configuration
+
+    bundle install
+
+* Database creation
+
+    rake db:create
+
+* Database initialization
+
+    rake db:setup
+
+* How to run the test suite
+
+    rake
+
+
+* Deployment instructions
+
+  None.
+
+=== Install
+
+=== Contributing
+
+Please, have a look in how to contribute to a Free Software:
+
+* http://example-osctc-site.github.io/curriculum/short.html
+
+If you are going to send us any patch, make sure to use the follow programming guidelines:
+
+* https://github.com/rubensmabueno/ruby-style-guide
+
+=== License
+
+Please see the LICENSE file
+
+=== Authors
+
+Copyright 2013-2014
+-------------------
+
+  Arthur de Moura Del Esposte (arthurmde at gmail.com)
+  Alexandre Almeida Barbosa (alexandrealmeidabarbosa at gmail.com)
