@@ -1,9 +1,17 @@
-<h1><%= @characters.count %></h1>
+<h1><%= 'Characters List' %></h1>
 
-<% @characters.each do |c| %>
-  <div><%= image_tag "#{c.thumbnail}.jpg" %></div>
-  <div>
-  	<%= link_to c.name, character_path(c.character_id) %>
-  	<%= c.character_id %>
-  </div>
-<% end %>
+<div id="hero-container" class="container-fluid">
+  <%= render partial: "characters_list", locals: {klass: Hero, character_type: "Heroes"} %>
+</div>
+
+<div id="villain-container" class="container-fluid">
+  <%= render partial: "characters_list", locals: {klass: Villain, character_type: "Villains"} %>
+</div>
+
+<div id="antihero-container" class="container-fluid">
+  <%= render partial: "characters_list", locals: {klass: Antihero, character_type: "Antiheroes"} %>
+</div>
+
+<div id="civilian-container" class="container-fluid">
+  <%= render partial: "characters_list", locals: {klass: Civilian, character_type: "Civilians"} %>
+</div>
