@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TestMarvelApi</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <title>Marvel Report</title>
+
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inverse">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Some Store</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Browse Products", "#" %></li>
+            <li><%= link_to "Price List" %></li>
+            <li><%= link_to "Contact Us" %></li>
+            <li><%= link_to "Cart" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <%= yield %>
 

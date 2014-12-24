@@ -37,7 +37,9 @@ gem 'protected_attributes'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-gem 'bootstrap-sass', '3.2.0.0'
+gem "therubyracer"
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
