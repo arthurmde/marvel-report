@@ -1,17 +1,25 @@
 <h1><%= 'Characters List' %></h1>
 
 <div id="hero-container" class="container-fluid">
-  <%= render partial: "characters_list", locals: {klass: Hero, character_type: "Heroes"} %>
+  <div class="panel panel-info">
+    <%= render partial: "characters_list", locals: {klass: Hero, character_type: "Heroes"} %>
+  </div>
 </div>
 
 <div id="villain-container" class="container-fluid">
-  <%= render partial: "characters_list", locals: {klass: Villain, character_type: "Villains"} %>
+  <div class="panel panel-danger">
+    <%= render partial: "characters_list", locals: {klass: Villain, character_type: "Villains"} %>
+  </div>
 </div>
 
 <div id="antihero-container" class="container-fluid">
-  <%= render partial: "characters_list", locals: {klass: Antihero, character_type: "Antiheroes"} %>
+  <div class="panel panel-warning">
+    <%= render partial: "characters_list", locals: {klass: Antihero, character_type: "Antiheroes"} %>
+  </div>
 </div>
 
 <div id="civilian-container" class="container-fluid">
-  <%= render partial: "characters_list", locals: {klass: Civilian, character_type: "Civilians"} %>
+  <div class="panel panel-success">
+    <%= render partial: "characters_list", locals: {klass: Civilian, character_type: "Civilians"} %>
+  </div>
 </div>

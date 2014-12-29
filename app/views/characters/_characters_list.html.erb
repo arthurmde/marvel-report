@@ -1,18 +1,22 @@
-<h2><%= character_type + " (#{klass.all.count})"%></h2>
+<div class="panel-heading">
+  <h3><%= character_type + " (#{klass.all.count})"%></h3>
+</div>
 
-<div class="row">
-  <% klass.order('name').each do |character| %>
-    <div class="col-xs-12 col-sm-6 col-lg-4">
-      <div class="thumbnail">
-        <div class="center">
-          <%= image_tag("#{character.thumbnail}", class: "img-circle") %>
-        </div>
-        <div class="caption">
-          <h3 class="center">
-            <%= link_to character.name, character_path(character.character_id) %>
-          </h3>
+<div class="panel-body">
+  <div class="row">
+    <% klass.order('name').each do |character| %>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="thumbnail">
+          <div class="center">
+            <%= image_tag("#{character.thumbnail}", class: "img-circle") %>
+          </div>
+          <div class="caption">
+            <h3 class="center">
+              <%= link_to character.name, character_path(character.character_id) %>
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

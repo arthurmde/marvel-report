@@ -1,0 +1,62 @@
+/*http://www.colorzilla.com/gradient-editor/*/
+
+.thumbnail{
+  background: transparent !important;
+  box-shadow: 5px 5px 2px #888888 !important;
+}
+
+.panel-info {
+  border-color: #31708f;
+}
+
+.panel-info .panel-heading {
+  color: #FFFFFF !important;
+  background-color: #31708f !important;
+  border-color: #31708f !important;
+}
+
+.panel-info .panel-body{
+  background: rgba(188, 232, 241, 0.2);
+}
+
+.panel-danger {
+  border-color: #a94442;
+}
+
+.panel-danger .panel-heading {
+  color: #FFFFFF !important;
+  background-color: #a94442 !important;
+  border-color: #a94442 !important;
+}
+
+.panel-danger .panel-body{
+  background: rgba(169, 68, 66, 0.2);
+}
+
+.panel-warning {
+  border-color: #8a6d3b;
+}
+
+.panel-warning .panel-heading {
+  color: #FFFFFF !important;
+  background-color: #8a6d3b !important;
+  border-color: #8a6d3b !important;
+}
+
+.panel-warning .panel-body{
+  background: rgba(138, 109, 59, 0.2);
+}
+
+.panel-success {
+  border-color: #3c763d;
+}
+
+.panel-success .panel-heading {
+  color: #FFFFFF !important;
+  background-color: #3c763d !important;
+  border-color: #3c763d !important;
+}
+
+.panel-success .panel-body{
+  background: rgba(60, 118, 61, 0.2);
+}
