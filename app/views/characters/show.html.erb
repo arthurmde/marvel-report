@@ -1,3 +1,9 @@
-<div><%= image_tag @character.thumbnail + '.jpg' %></div>
-<div>Name: <%= @character.name %></div>
-<div>Description: <%= @character.description %></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-xs-10">
+      <div class="panel <%= 'panel-' + @character.class.name.downcase %>" >
+        <%= render partial: "character_info", locals: {character: @character} %>
+      </div>
+    </div>
+  </div>
+</div>

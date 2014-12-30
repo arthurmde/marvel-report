@@ -1,0 +1,27 @@
+<div class="panel-heading">
+  <h3><%= character.name %></h3>
+</div>
+
+<div class="panel-body">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 text-center">
+      <%= image_tag character.thumbnail, class: "center-block img-thumbnail img-responsive img-rounded" %>
+    </div>
+
+    <div class="col-xs-12 col-sm-8">
+      <p>
+        <strong>About: </strong>
+        <%= character.description %>
+      </p>
+      <p>
+        <strong>More Information: </strong>
+        <span class="label label-primary">
+          <%= link_to "Details", character.detail_url%>
+        </span>
+        <span class="label label-primary">
+          <%= link_to "Wiki", character.wiki_url%>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

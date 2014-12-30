@@ -9,6 +9,10 @@
   border-color: #31708f;
 }
 
+.panel-hero {
+  @extend .panel-info;
+}
+
 .panel-info .panel-heading {
   color: #FFFFFF !important;
   background-color: #31708f !important;
@@ -21,6 +25,10 @@
 
 .panel-danger {
   border-color: #a94442;
+}
+
+.panel-villain {
+  @extend .panel-danger;
 }
 
 .panel-danger .panel-heading {
@@ -37,6 +45,10 @@
   border-color: #8a6d3b;
 }
 
+.panel-antihero {
+  @extend .panel-warning;
+}
+
 .panel-warning .panel-heading {
   color: #FFFFFF !important;
   background-color: #8a6d3b !important;
@@ -51,6 +63,10 @@
   border-color: #3c763d;
 }
 
+.panel-civilian {
+  @extend .panel-success;
+}
+
 .panel-success .panel-heading {
   color: #FFFFFF !important;
   background-color: #3c763d !important;
@@ -59,4 +75,33 @@
 
 .panel-success .panel-body{
   background: rgba(60, 118, 61, 0.2);
+}
+
+.panel .label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 85%;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.panel .label + .label {
+  margin: 6px;
+}
+
+.panel .label a:link{
+  color: #FFFFFF;
+}
+
+.panel .label a:visited {
+  color: #FFFFFF;
+}
+
+.panel .label a:hover {
+  color: #FFFFFF;
+  text-decoration:underline;
 }
