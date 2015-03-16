@@ -69,3 +69,6 @@ Copyright 2013-2014
 
   Arthur de Moura Del Esposte (arthurmde at gmail.com)
   Alexandre Almeida Barbosa (alexandrealmeidabarbosa at gmail.com)
+
+=== Graph and Theory
+https://www.lume.ufrgs.br/bitstream/handle/10183/86094/000909891.pdf?sequence=1
