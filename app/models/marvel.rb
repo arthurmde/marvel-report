@@ -21,6 +21,27 @@ class Marvel
     end
   end
 
+  def self.import_characters_comics(limit = 100)
+    Character.all.each do |character|
+      offset = 0
+
+      begin
+        response = self.get("/v1/public/characters/#{character.character_id.to_s}/comics?limit=#{limit}&offset=#{offset}&#{MarvelParameters.credentials}")
+        puts "&"*100, "/v1/public/characters/#{character.character_id.to_s}/comics?limit=#{limit}&offset=#{offset}&#{MarvelParameters.credentials}", response, "&"*100
+        response_body = JSON.parse(response.body)
+
+
+        imported_comics = response_body["data"].nil? ? 0 : response_body["data"]["count"]
+        offset = offset + imported_comics
+
+        Marvel.create_comic(character, response_body, imported_comics)
+      end while imported_comics < limit
+
+      puts "="*100, "#{offset} comics imported for #{character.name}", "="*100
+      sleep(3)
+    end
+  end
+
   def self.import_characters_events
     Character.all.each do |character|
       response = self.get("/v1/public/characters/#{character.character_id}/events?limit=100&#{MarvelParameters.credentials}")
@@ -123,5 +144,49 @@ class Marvel
     end
   end
 
+  def self.create_comic(character, response_body, imported_comics = 0)
+    if Marvel.request_ok?(response_body)
+      comic_data = response_body['data']
+      unless comic_data.nil?
+        results = comic_data['results']
+
+        results.each do |result|
+          comic = Comic.where(:comic_id => result['id']).first
+
+          if comic
+            comic.characters << character
+            next
+          end
+
+          comic = Comic.new
+
+          urls = result['urls']
+          thumbnail = result['thumbnail']
+          comic.thumbnail = thumbnail.blank? ? "" : thumbnail['path'] + '.' + thumbnail['extension']
+          comic.comic_id = result['id']
+          comic.title = result['title']
+          comic.issue = result['issueNumber']
+          comic.description = result['description']
+          comic.isbn = result['isbn']
+          comic.pages = result['pageCount']
+
+          unless urls.nil?
+            urls.each do |url|
+              type = url["type"].to_s + '_url'
+              comic.send(type + '=', url["url"]) if comic.respond_to? type
+            end
+          end
+
+          comic.characters << character
+
+          comic.save!
+        end
+      end
+    end
+  end
+
+  def self.request_ok?(response_body)
+    !response_body.nil? && response_body["code"] == 200 && response_body["status"] == "Ok"
+  end
 
 end

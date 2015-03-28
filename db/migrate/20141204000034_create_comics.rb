@@ -6,7 +6,11 @@ class CreateComics < ActiveRecord::Migration
       t.integer :issue
       t.text :description
       t.string :thumbnail
-
+      t.string :isbn
+      t.integer :pages
+      t.string :detail_url
+      t.float :price
+      t.date :sale_date
       t.timestamps
     end
   end

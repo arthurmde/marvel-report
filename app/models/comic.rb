@@ -1,5 +1,6 @@
 class Comic < ActiveRecord::Base
-	attr_accessible :comic_id, :title, :issue, :thumbnail, :description
+  attr_accessible :comic_id, :title, :issue, :thumbnail, :description
+  attr_accessible :isbn, :pages, :detail_url
 
   validates :comic_id, presence: true, uniqueness: true
 

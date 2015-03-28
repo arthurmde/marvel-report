@@ -36,6 +36,11 @@ ActiveRecord::Schema.define(version: 20141204001101) do
     t.integer  "issue"
     t.text     "description"
     t.string   "thumbnail"
+    t.string   "isbn"
+    t.integer  "pages"
+    t.string   "detail_url"
+    t.float    "price"
+    t.date     "sale_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
