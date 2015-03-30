@@ -30,5 +30,7 @@ module TestMarvelApi
         ENV[key.to_s] = value
       end if File.exists?(env_file)
     end
+
+    config.autoload_paths << Rails.root.join('lib')
   end
 end
