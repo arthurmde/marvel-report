@@ -1,4 +1,4 @@
-TestMarvelApi::Application.routes.draw do
+MarvelReport::Application.routes.draw do
   resources :comics
 
   resources :characters, only: [:index, :show]

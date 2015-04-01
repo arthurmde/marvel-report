@@ -1,0 +1,36 @@
+# Black Cat related
+defenders:
+  id: 1
+  title: Defenders (2011)
+  issue: 8
+  pages: 32
+  comic_id: 39767
+  # characters: black_cat
+
+
+# Carnage related
+spider_man_x_carnage:
+  id: 2
+  title: Peter Parker, the Spectacular Spider-Man (1976)
+  issue: 202
+  pages: 32
+  comic_id: 14657
+  # characters: carnage, spider_man
+
+#Spider-Man related
+spider_man_1:
+  id: 3
+  title: Amazing Spider-Man (1963)
+  issue: 194
+  pages: 36
+  comic_id: 6587
+  # characters: black_cat, carnage, spider_man
+
+spider_man_2:
+  id: 4
+  title: Amazing Spider-Man Annual (1964)
+  issue: 5
+  pages: 3
+  comic_id: 16906
+  # characters: spider_man, uncle_ben
+

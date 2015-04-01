@@ -20,4 +20,16 @@ class Character < ActiveRecord::Base
     characters
   end
 
+  class << self
+    # finds a character by its name. This method is a shortcut to
+    #
+    # Examples:
+    #
+    #  villain = Character['Carnage']
+    #  hero = Character['Captain America']
+    def [](name)
+      self.find_by_name(name)
+    end
+
+  end
 end

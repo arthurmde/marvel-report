@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TestMarvelApi::Application.load_tasks
+MarvelReport::Application.load_tasks
