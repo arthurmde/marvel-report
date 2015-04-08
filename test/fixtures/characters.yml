@@ -2,22 +2,26 @@
 carnage:
   id: 1
   name: Carnage
+  type: Villain
   character_id: 1009227
 
 #Hero
 spider_man:
   id: 2
   name: Spider-Man
+  type: Hero
   character_id: 1009610
 
-#AntiHero
+#Antihero
 black_cat:
   id: 3
   name: Black Cat
+  type: Antihero
   character_id: 1009185
 
 #Civilian
 uncle_ben:
   id: 4
   name: Ben Parker
+  type: Civilian
   character_id: 1009489
