@@ -15,5 +15,17 @@ participations_4:
   comic_id: 3
 
 participations_5:
-  character_id: 1
+  character_id: 2
   comic_id: 3
+
+participations_6:
+  character_id: 3
+  comic_id: 3
+
+participations_7:
+  character_id: 2
+  comic_id: 4
+
+participations_8:
+  character_id: 4
+  comic_id: 4
