@@ -1,0 +1,19 @@
+participations_1:
+  character_id: 3
+  comic_id: 1
+
+participations_2:
+  character_id: 3
+  comic_id: 1
+
+participations_3:
+  character_id: 3
+  comic_id: 2
+
+participations_4:
+  character_id: 1
+  comic_id: 3
+
+participations_5:
+  character_id: 1
+  comic_id: 3

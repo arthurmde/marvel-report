@@ -3,8 +3,8 @@ class Character < ActiveRecord::Base
 
   validates :character_id, presence: true, uniqueness: true
 
-  has_many :comic_characters
-  has_many :comics, through: :comic_characters
+  has_many :participations
+  has_many :comics, through: :participations
 
   def self.find_all
     characters = []

@@ -15,7 +15,7 @@ spider_man_x_carnage:
   issue: 202
   pages: 32
   comic_id: 14657
-  # characters: carnage, spider_man
+  # characters: [carnage, spider_man]
 
 #Spider-Man related
 spider_man_1:

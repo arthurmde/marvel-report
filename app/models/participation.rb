@@ -1,5 +1,5 @@
-class ComicCharacter < ActiveRecord::Base
-  self.table_name = 'comic_characters'
+class Participation < ActiveRecord::Base
+  self.table_name = 'participations'
 
   attr_accessible :comic_id, :character_id, :comic, :character
 

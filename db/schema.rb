@@ -28,11 +28,6 @@ ActiveRecord::Schema.define(version: 20141204001101) do
     t.text    "description"
   end
 
-  create_table "comic_characters", force: true do |t|
-    t.integer "comic_id"
-    t.integer "character_id"
-  end
-
   create_table "comics", force: true do |t|
     t.integer  "comic_id"
     t.string   "title"
@@ -48,16 +43,9 @@ ActiveRecord::Schema.define(version: 20141204001101) do
     t.datetime "updated_at"
   end
 
-  create_table "event_characters", force: true do |t|
-    t.integer "event_id"
+  create_table "participations", force: true do |t|
+    t.integer "comic_id"
     t.integer "character_id"
-  end
-
-  create_table "events", force: true do |t|
-    t.string  "name"
-    t.string  "thumbnail"
-    t.integer "event_id"
-    t.text    "description"
   end
 
 end
