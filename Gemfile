@@ -40,6 +40,7 @@ gem 'protected_attributes'
 gem "therubyracer"
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 
 # Use unicorn as the app server
 # gem 'unicorn'

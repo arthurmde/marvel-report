@@ -32,15 +32,19 @@ module Marvel
       imported_comics = 0
 
       begin
-        response = self.get("/v1/public/characters/#{character.character_id.to_s}/comics?limit=#{limit}&offset=#{offset}&#{MarvelParameters.credentials}", :read_timeout => 500, :use_ssl => true)
-        response_body = JSON.parse(response.body)
+        begin
+          response = self.get("/v1/public/characters/#{character.character_id.to_s}/comics?limit=#{limit}&offset=#{offset}&#{MarvelParameters.credentials}", :read_timeout => 5000, :use_ssl => true)
+          response_body = JSON.parse(response.body)
 
-        Marvel.raise_erros(response_body) unless request_ok?(response_body)
+          Marvel.raise_erros(response_body) unless request_ok?(response_body)
 
-        imported_comics = response_body["data"].nil? ? 0 : response_body["data"]["count"]
-        offset = offset + imported_comics
+          imported_comics = response_body["data"].nil? ? 0 : response_body["data"]["count"]
+          offset = offset + imported_comics
 
-        Marvel.create_comic(character, response_body, imported_comics)
+          Marvel.create_comic(character, response_body, imported_comics)
+        rescue
+          imported_comics = 100
+        end
       end while imported_comics >= limit
 
       puts "="*100, "#{offset} comics imported for #{character.name}", "="*100
@@ -84,7 +88,7 @@ module Marvel
 
   def self.create_comic(character, response_body, imported_comics = 0)
     comic_data = response_body['data']
-    
+
     unless comic_data.nil?
       results = comic_data['results']
 
@@ -134,6 +138,7 @@ module Marvel
     puts "Error importing Marvel's data"
     puts "Code: #{response_body['code']}"
     puts "Status: #{response_body['status']}"
+    puts "Message: #{response_body['message']}"
     raise RuntimeError
   end
 
