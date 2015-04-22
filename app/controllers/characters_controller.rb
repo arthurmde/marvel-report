@@ -3,6 +3,6 @@ class CharactersController < ApplicationController
   end
 
   def show
-    @character = Character.where(character_id: params[:id]).first
+    @character = Character.find(params[:id])
   end
 end
