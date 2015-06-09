@@ -6,4 +6,6 @@ class Comic < ActiveRecord::Base
 
   has_many :participations
   has_many :characters, through: :participations
+
+  default_scope { order('created_at DESC') }
 end

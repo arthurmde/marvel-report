@@ -4,7 +4,21 @@ class ComicsController < ApplicationController
   # GET /comics
   # GET /comics.json
   def index
-    @comics = Comic.all
+    limit = 12
+
+    if params[:id]
+      @comics = Comic.where('id < ?', params[:id]).limit(limit)
+    else
+      @comics = Comic.limit(limit)
+    end
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
+
+  def load_more
   end
 
   # GET /comics/1
