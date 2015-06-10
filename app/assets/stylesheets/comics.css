@@ -12,3 +12,18 @@
   height: 615px;
   margin-bottom: 20px;
 }
+
+.comic-page .show .panel .thumbnail{
+  margin-left: 10px;
+}
+
+.comic-page .related-character .panel .panel-body .center img{
+  width: 150px;
+  height: 150px;
+}
+
+.comic-page .related-character .panel .panel-heading .panel-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
