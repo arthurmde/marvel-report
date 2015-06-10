@@ -44,7 +44,6 @@ class MarvelParameters
     characters << {:id => 1010906, :name => "Baron Zemo (Helmut Zemo)", :type => "Villain"}
     characters << {:id => 1009172, :name => "Batroc the Leaper", :type => "Villain"}
     characters << {:id => 1009175, :name => "Beast", :type => "Hero"}
-    characters << {:id => 1009329, :name => "Ben Grimm", :type => "Civilian"}
     characters << {:id => 1009489, :name => "Ben Parker", :type => "Civilian"}
     characters << {:id => 1009180, :name => "Beta-Ray Bill", :type => "Hero"}
     characters << {:id => 1009548, :name => "Betty Ross", :type => "Civilian"}
@@ -67,7 +66,6 @@ class MarvelParameters
     characters << {:id => 1009220, :name => "Captain America", :type => "Hero"}
     characters << {:id => 1010338, :name => "Captain Marvel (Carol Danvers)", :type => "Hero"}
     characters << {:id => 1009224, :name => "Captain Marvel (Mar-Vell)", :type => "Hero"}
-    characters << {:id => 1009225, :name => "Captain Stacy", :type => "Civilian"}
     characters << {:id => 1011027, :name => "Captain Universe", :type => "Hero"}
     characters << {:id => 1009227, :name => "Carnage", :type => "Villain"}
     characters << {:id => 1009234, :name => "Chameleon", :type => "Villain"}
@@ -76,16 +74,14 @@ class MarvelParameters
     characters << {:id => 1009243, :name => "Colossus", :type => "Hero"}
     characters << {:id => 1011362, :name => "Cottonmouth", :type => "Villain"}
     characters << {:id => 1009252, :name => "Crossbones", :type => "Villain"}
-    characters << {:id => 1009244, :name => "Curt Conners", :type => "Civilian"}
     characters << {:id => 1009257, :name => "Cyclops", :type => "Hero"}
 
-    characters << {:id => 1010776, :name => "Danny Rand", :type => "Hero"}
     characters << {:id => 1009262, :name => "Daredevil", :type => "Hero"}
     characters << {:id => 1009265, :name => "Dark Phoenix", :type => "Villain"}
     characters << {:id => 1009268, :name => "Deadpool", :type => "Antihero"}
     characters << {:id => 1009269, :name => "Death", :type => "Villain"}
     characters << {:id => 1010890, :name => "Deathlok", :type => "Antihero"}
-    characters << {:id => 1009275, :name => "Doc Samson", :type => "Villain"}
+    characters << {:id => 1009275, :name => "Doc Samson", :type => "Hero"}
     characters << {:id => 1009281, :name => "Doctor Doom", :type => "Villain"}
     characters << {:id => 1009276, :name => "Doctor Octopus", :type => "Villain"}
     characters << {:id => 1009282, :name => "Doctor Strange", :type => "Hero"}
@@ -100,7 +96,6 @@ class MarvelParameters
     characters << {:id => 1010671, :name => "Enchantress (Amora)", :type => "Villain"}
 
     characters << {:id => 1009297, :name => "Falcon", :type => "Hero"}
-    characters << {:id => 1009335, :name => "Felicia Hardy", :type => "Civilian"}
 
     characters << {:id => 1009377, :name => "Gabe Jones", :type => "Civilian"}
     characters << {:id => 1009312, :name => "Galactus", :type => "Villain"}
